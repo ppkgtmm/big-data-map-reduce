@@ -5,19 +5,20 @@ import sys
 # import re to help remove special characters from text
 import re
 
-def clean_word(word, clean=False):
+def clean_text(text, clean=False):
     if not clean: # don't want to clean
-        return word
-    # make word lower case
-    word_lower = word.lower()
-    # remove special characters from word
-    return re.sub(r'[^A-Za-z0-9]', '', word_lower)
+        return text
+    # make string lower case
+    text_lower = text.lower()
+    # remove special characters from string
+    return re.sub(r'[^A-Za-z0-9]', ' ', text_lower)
 
 def process_line(line, clean=False):
     # to remove leading and trailing whitespace
     line = line.strip()
-    # split the line into words, clean words and remove empty words from cleaning
-    return [clean_word(w, clean) for w in line.split() if clean_word(w, clean)]
+    line = clean_text(line, clean)
+    # split the line into words
+    return line.split()
 
 def map_unigram(clean=False):
     # reading entire line from STDIN (standard input)
@@ -47,7 +48,7 @@ if len(sys.argv) < 2:
     print(
         '\nUsage: python3 file_name.py count_type [clean]\n\n\
         count_type\tunigram or bigram\n\
-        clean\t\tspecify t if you want to clean words\n'
+        clean\t\tspecify t if you want to clean texts\n'
     )
     sys.exit(1)
 
