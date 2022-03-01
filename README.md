@@ -7,3 +7,5 @@ This repo aims to store code for word count map reduce lab of CPE 325 Big Data, 
 
 see this [notebook](https://github.com/ppkgtmm/big-data/blob/main/Lecture%206%20-%20Hadoop%20MapReduce/Exercise.ipynb) if you want to know more about how the code here is used
 
+### :sparkles: References
+- [x] https://www.geeksforgeeks.org/hadoop-streaming-using-python-word-count-problem/
