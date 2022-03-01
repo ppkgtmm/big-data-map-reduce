@@ -8,10 +8,11 @@ word = None
   
 # read the entire line from STDIN
 for line in sys.stdin:
-    # remove leading and trailing whitespace
-    l = line.strip()
     # splitting the data on the basis of tab we have provided in mapper.py
-    word, count = l.split('\t', 1)
+    word, count = line.split('\t', 1)
+    # remove leading and trailing whitespace
+    word = word.strip()
+    count = count.strip()
     # convert count (currently a string) to int
     try:
         count = int(count)
@@ -30,7 +31,7 @@ for line in sys.stdin:
             print(f'{current_word}\t{current_count}')
         current_count = count
         current_word = word
-
+  
 # do not forget to output the last word if needed!
 if current_word == word:
     print(f'{current_word}\t{current_count}')
