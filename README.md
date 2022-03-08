@@ -11,7 +11,7 @@
 
 ## Walk through
 - [mapper](https://github.com/ppkgtmm/big-data-map-reduce/blob/main/mapper.py) - Count words inside input text which is supplied line by line
-- [reducer](https://github.com/ppkgtmm/big-data-map-reduce/blob/main/reducer.py) - Perform aggregation of counts for each unique word inside text
+- [reducer](https://github.com/ppkgtmm/big-data-map-reduce/blob/main/reducer.py) - Combine counts for each distinct word inside text
 
 ## Usage
 - Count unigrams without text cleaning
