@@ -16,11 +16,11 @@
 ## Usage
 - Count unigrams without text cleaning
 ```sh
-cat <text file name> | python3 mapper.py unigram
+cat <text file name> | python3 mapper.py unigram | sort -k1,1 | python3 reducer.py
 ```
 - Count bigrams with text cleaning
 ```sh
-cat <text file name> | python3 mapper.py bigram --clean
+cat <text file name> | python3 mapper.py bigram --clean | sort -k1,1 | python3 reducer.py
 ```
 
 see this [notebook](https://github.com/ppkgtmm/big-data/blob/main/Lecture%206%20-%20Hadoop%20MapReduce/Exercise.ipynb) if you want to know more about how the code here is used with hadoop
