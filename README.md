@@ -2,7 +2,7 @@
 
 ## General info
 - Repo created with aim to store code for word count MapReduce task assigned in lab of course CPE 325 Big Data, King Mongkut's University of Technology Thonburi
-- Supported MapReduce tasks are namely counting unigrams and bigrams. Optionally, text are cleaned if user want
+- Supported MapReduce tasks are namely counting unigrams and bigrams. Optionally, text can be cleaned
 
 ### :gear: Tools
 - [x] Python 3 : programming language
