@@ -9,6 +9,10 @@
 - re : regular expression for text cleaning
 - argparse : program argument parser
 
+## Walk through
+- [mapper](https://github.com/ppkgtmm/big-data-map-reduce/blob/main/mapper.py) - Count words inside input text which is supplied line by line
+- [reducer](https://github.com/ppkgtmm/big-data-map-reduce/blob/main/reducer.py) - Perform aggregation of counts for each unique word inside text
+
 ## Usage
 - Count unigrams without text cleaning
 ```sh
@@ -19,11 +23,7 @@ cat <text file name> | python3 mapper.py unigram
 cat <text file name> | python3 mapper.py bigram --clean
 ```
 
-## Walk through
-- [mapper](https://github.com/ppkgtmm/big-data-map-reduce/blob/main/mapper.py) - Count words inside input text which is supplied line by line
-- [reducer](https://github.com/ppkgtmm/big-data-map-reduce/blob/main/reducer.py) - Perform aggregation of counts for each unique word inside text
-
-see this [notebook](https://github.com/ppkgtmm/big-data/blob/main/Lecture%206%20-%20Hadoop%20MapReduce/Exercise.ipynb) if you want to know more about how the code here is used
+see this [notebook](https://github.com/ppkgtmm/big-data/blob/main/Lecture%206%20-%20Hadoop%20MapReduce/Exercise.ipynb) if you want to know more about how the code here is used with hadoop
 
 ## References
 - [Hadoop streaming using python word count problem](https://www.geeksforgeeks.org/hadoop-streaming-using-python-word-count-problem/)
