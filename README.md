@@ -9,6 +9,10 @@
 - re : regular expression for text cleaning
 - argparse : program argument parser
 
+## Walk through
+- [mapper](https://github.com/ppkgtmm/big-data-map-reduce/blob/main/mapper.py) - Count words inside input text which is supplied line by line
+- [reducer](https://github.com/ppkgtmm/big-data-map-reduce/blob/main/reducer.py) - Perform aggregation of counts for each unique word inside text
+
 see this [notebook](https://github.com/ppkgtmm/big-data/blob/main/Lecture%206%20-%20Hadoop%20MapReduce/Exercise.ipynb) if you want to know more about how the code here is used
 
 ## References
