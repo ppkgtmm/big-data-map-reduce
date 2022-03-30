@@ -4,7 +4,7 @@
 - Repo created with aim to store code for word count MapReduce task assigned in lab of course CPE 325 Big Data, King Mongkut's University of Technology Thonburi
 - Supported MapReduce tasks are namely counting unigrams and bigrams. Optionally, texts can be cleaned
 
-## Technologies
+## Tools and technologies
 - python 3 : programming language
 - re : regular expression for text cleaning
 - argparse : program argument parser
