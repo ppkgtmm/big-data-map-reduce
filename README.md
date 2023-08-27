@@ -2,14 +2,9 @@
 
 Repo created to store code for word count MapReduce task assigned in lab of course CPE 325 Big Data, King Mongkut's University of Technology Thonburi. Supported MapReduce tasks are namely counting unigrams and bigrams. Texts can be optionally cleaned prior to MapReduce
 
-## Tools and technologies
-- python 3 : programming language
-- re : regular expression for text cleaning
-- argparse : program argument parser
-
 ## Walk through
-- [mapper](https://github.com/ppkgtmm/big-data-map-reduce/blob/main/mapper.py) - Count words inside input text which is supplied line by line
-- [reducer](https://github.com/ppkgtmm/big-data-map-reduce/blob/main/reducer.py) - Combine counts for each distinct word inside text
+- [mapper](https://github.com/ppkgtmm/big-data-map-reduce/blob/main/mapper.py) counts words inside input text which is supplied line by line
+- [reducer](https://github.com/ppkgtmm/big-data-map-reduce/blob/main/reducer.py) combines counts for each distinct word inside text
 
 ## Usage
 - Count unigrams without text cleaning
