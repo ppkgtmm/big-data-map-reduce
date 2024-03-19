@@ -1,24 +1,15 @@
-# word count map reduce
+# 🐘 text map reduce
 
-Repo created to store code for word count MapReduce task assigned in lab of course CPE 325 Big Data, King Mongkut's University of Technology Thonburi. Supported MapReduce tasks are namely counting unigrams and bigrams. Texts can be optionally cleaned prior to MapReduce
+map reduce scripts for unigrams and bigrams count with optional text cleaning
 
-## Walk through
-- [mapper](https://github.com/ppkgtmm/big-data-map-reduce/blob/main/mapper.py) counts words inside input text which is supplied line by line
-- [reducer](https://github.com/ppkgtmm/big-data-map-reduce/blob/main/reducer.py) combines counts for each distinct word inside text
-
-## Usage
-- Count unigrams without text cleaning
-```sh
-cat [text file name] | python3 mapper.py unigram | sort -k1,1 | python3 reducer.py
+## usage
 ```
-- Count bigrams with text cleaning
-```sh
-cat [text file name] | python3 mapper.py bigram --clean | sort -k1,1 | python3 reducer.py
+cat [text file name] | python3 mapper.py [count type] --clean | sort -k1,1 | python3 reducer.py
 ```
-**remarks**
 - replace \[text file name\] with path to your text file
-- see this [notebook](https://github.com/ppkgtmm/big-data/blob/main/Lecture%206%20-%20Hadoop%20MapReduce/Exercise.ipynb) if you want to know more about how the code here is used with hadoop
+- replace \[count type\] with either unigram or bigram
+- omit `--clean` if text cleaning is not required
 
-## References
-- [Hadoop streaming using python word count problem](https://www.geeksforgeeks.org/hadoop-streaming-using-python-word-count-problem/)
-- [Command line interfaces python argparse](https://realpython.com/command-line-interfaces-python-argparse/)
+## references
+- [hadoop streaming using python word count problem](https://www.geeksforgeeks.org/hadoop-streaming-using-python-word-count-problem/)
+- [command line interfaces python argparse](https://realpython.com/command-line-interfaces-python-argparse/)
