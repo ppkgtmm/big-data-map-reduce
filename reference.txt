@@ -1,0 +1,2 @@
+hadoop streaming with python = https://www.geeksforgeeks.org/hadoop-streaming-using-python-word-count-problem/
+python argparse = https://realpython.com/command-line-interfaces-python-argparse/
